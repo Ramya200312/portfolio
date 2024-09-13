@@ -1,6 +1,6 @@
 import './Middle.css';
 import HomeLogo from './Assest/Static/HomeLogo.png';
-import { Button } from '@mui/material';
+import { Button ,Box} from '@mui/material';
 import { useNavigate } from 'react-router-dom';
 
 function Middle() {
@@ -10,6 +10,7 @@ function Middle() {
     navigate('/resume');
   };
   return (
+    <Box sx={{ paddingTop: '64px' }}>
     <div id="head1">
       <div className="content">
         <p className="greeting">-Hello</p>
@@ -36,6 +37,7 @@ function Middle() {
       </div>
       <img src={HomeLogo} className="profile-img" alt="Profile" id="flip"/>
     </div>
+    </Box>
   );
 }
 

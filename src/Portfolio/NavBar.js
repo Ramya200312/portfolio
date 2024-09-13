@@ -26,7 +26,7 @@ function NavBar() {
   };
 
   return (
-    <AppBar position="static" sx={{ backgroundColor: 'white', color: '#7A1CAC' }}>
+    <AppBar position="fixed" sx={{ backgroundColor: 'white', color: '#7A1CAC' }}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <Box
@@ -38,7 +38,7 @@ function NavBar() {
               textDecoration: 'none',
             }}
           >
-            <img src={Logo} alt="Logo" style={{ height: '90px', width: '100px',borderRadius:50,objectFit:'cover' }} />
+            <img src={Logo} alt="Logo" style={{ height: '50px', width: '50px',borderRadius:50,objectFit:'cover' }} />
           </Box>
 
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
