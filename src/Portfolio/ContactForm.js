@@ -36,7 +36,7 @@ const ContactCard = () => {
   };
 
   return (
-    <Container maxWidth="lg" sx={{ marginTop: 5 }}>
+    <Container maxWidth="lg" sx={{ marginTop: 10 }}>
       <Fade in={true} timeout={1000}>
         <Card
           sx={{
