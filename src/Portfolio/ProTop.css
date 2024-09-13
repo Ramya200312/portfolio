@@ -1,0 +1,59 @@
+.custom-card {
+    max-width: 300px;
+    margin: auto;
+    margin-top: 16px;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    box-shadow: 0px 6px 12px 6px rgba(0, 0, 0, 0.2); 
+    border-radius: 10px;  
+  
+  }
+  
+  .custom-card-media {
+    height: 290px;
+    transition: transform 0.3s ease;
+    border-radius: 10px 10px 0 0; 
+  
+  }
+  
+  .custom-card-content {
+    position: relative;
+    z-index: 1;
+    transition: transform 0.3s ease;
+    border-radius: 0 0 10px 10px; 
+  
+  }
+  
+  .custom-card:hover .custom-card-media,
+  .custom-card:hover .custom-card-content {
+    transform: translateY(-80px); 
+  }
+  
+  .hover-content {
+    position: absolute;
+    bottom: 0; 
+    left: 0;
+    right: 0;
+    background-color: white;
+    color: black; 
+    opacity: 0;
+    transform: translateY(100%); 
+    transition: opacity 0.3s, transform 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 16px; 
+    box-sizing: border-box; 
+    z-index: 2;
+    border-radius: 0 0 10px 10px; 
+  
+  }
+  
+  .custom-card:hover .hover-content {
+    opacity: 1;
+    transform: translateY(0); 
+  }
+  

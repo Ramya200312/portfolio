@@ -1,0 +1,140 @@
+#head1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px;
+  border-radius: 15px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  animation: fadeIn 1.5s forwards ease-in-out;
+  animation-delay: 0.3s;
+  height: 71vh;
+
+}
+
+@keyframes fadeIn {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+}
+
+.content {
+  color: white;
+  height:40vh;
+  max-width: 50%;
+  opacity: 0;
+  transform: translateX(-50px);
+  animation: slideInLeft 1.5s forwards ease-in-out;
+  animation-delay: 0.5s;
+}
+
+@keyframes slideInLeft {
+  0% {
+      opacity: 0;
+      transform: translateX(-50px);
+  }
+  100% {
+      opacity: 1;
+      transform: translateX(0);
+  }
+}
+
+.greeting {
+  
+  font-size: 1.5rem;
+  font-style: italic;
+  margin-bottom: 10px;
+  opacity: 0;
+  animation: fadeIn 1.5s forwards ease-in-out;
+  animation-delay: 0.7s;
+}
+
+.headline {
+  font-size: 3.5rem;
+  font-weight: bold;
+  line-height: 1.2;
+  color: #7A1CAC;
+  transition: all 0.3s ease;
+  opacity: 0;
+  animation: fadeIn 1.5s forwards ease-in-out;
+  animation-delay: 0.9s;
+}
+
+.headline:hover {
+  color: #3FFF00;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.highlight {
+  color: #3FFF00;
+  font-size: 3.5rem;
+  transition: all 0.3s ease;
+}
+
+.headline .highlight:hover {
+  color: #7A1CAC;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.profile-img {
+  height: 600px;
+  width: 450px;
+  opacity: 0;
+  animation: slideInRight 1.5s forwards ease-in-out;
+  animation-delay: 1.2s;
+}
+
+@keyframes slideInRight {
+  0% {
+      opacity: 0;
+      transform: translateX(50px) scale(0.95);
+  }
+  100% {
+      opacity: 1;
+      transform: translateX(0) scale(1);
+  }
+}
+
+.profile-img:hover {
+  transform: scale(1.05);
+}
+
+.resume-btn {
+  color: white;
+  background-color: #3FFF00;
+  border-color:#7A1CAC;
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1.5s forwards ease-in-out;
+  animation-delay: 1.5s;
+}
+
+@keyframes fadeInUp {
+  0% {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+.resume-btn:hover {
+  color: #fff;
+  background-color: #7A1CAC;
+  border-color:#3FFF00;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+  transform: translateY(-3px);
+}
+
+#flip {
+transform: scaleY(90); /* Horizontal flip */
+}
