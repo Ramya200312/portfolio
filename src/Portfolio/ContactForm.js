@@ -70,18 +70,7 @@ const ContactCard = () => {
                     I'm always open to discuss about the project and to talk about new ideas. Let’s connect!
                   </Typography>
 
-                  <Zoom in={true} timeout={2000}>
-                    <Box sx={{ marginBottom: 3 }}>
-                      <Avatar
-                        src={PhoneLogo}
-                        alt="Phone Icon"
-                        sx={{ width: 50, height: 50, margin: '0 auto', backgroundColor: '#fff' }}
-                      />
-                      <Typography variant="h6" sx={{ marginTop: 1, color: '#7A1CAC' }}>
-                        +91 75581 80587
-                      </Typography>
-                    </Box>
-                  </Zoom>
+                  
 
                   <Zoom in={true} timeout={2200}>
                     <Box sx={{ marginBottom: 3 }}>
