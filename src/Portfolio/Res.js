@@ -16,14 +16,14 @@ const Res = () => {
         <div className="right-column">
           <div className="buttons-container">
             <a
-              href="https://drive.google.com/file/d/1l0zOPeHaAxI_7_ES3xlpZYDAomfcO5Yb/view?usp=drive_link"
+              href="https://drive.google.com/file/d/1l0zOPeHaAxI_7_ES3xlpZYDAomfcO5Yb/view"
               target="_blank"
               rel="noopener noreferrer"
             >
               <button id="b1">View</button>
             </a>
             <a
-              href="https://drive.google.com/file/d/1l0zOPeHaAxI_7_ES3xlpZYDAomfcO5Yb/view?usp=drive_link"
+              href="https://drive.google.com/file/d/1l0zOPeHaAxI_7_ES3xlpZYDAomfcO5Yb/view"
               target="_blank"
               download="RamyaResume N1.pdf"
             >
