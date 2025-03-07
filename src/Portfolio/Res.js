@@ -20,14 +20,14 @@ const Res = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <button id="b1">View</button>
+              <button className="btn">View</button>
             </a>
             <a
               href="https://drive.google.com/file/d/1l0zOPeHaAxI_7_ES3xlpZYDAomfcO5Yb/view"
               target="_blank"
-              download="RamyaResume N1.pdf"
+              download="RamyaResume.pdf"
             >
-              <button id="b2">Download</button>
+              <button className="btn">Download</button>
             </a>
           </div>
         </div>
@@ -36,14 +36,13 @@ const Res = () => {
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" id="svg1">
           <defs>
             <linearGradient id="gradient1" x1="0%" y1="0%" x2="100%" y2="100%">
-              <stop offset="0%" style={{ stopColor: '#3FFF00', stopOpacity: 1 }} />
-              <stop offset="90%" style={{ stopColor: '#7A1CAC', stopOpacity: 1 }} />
+              <stop offset="0%" stopColor="#3FFF00" />
+              <stop offset="90%" stopColor="#7A1CAC" />
             </linearGradient>
           </defs>
           <path
             fill="url(#gradient1)"
-            fillOpacity="2.5"
-            d="M0,128L80,154.7C160,181,320,235,480,224C640,213,800,139,960,112C1120,85,1280,107,1360,117.3L1440,128L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"
+            d="M0,128L80,154.7C160,181,320,235,480,224C640,213,800,139,960,112C1120,85,1280,107,1360,117.3L1440,128V320H0Z"
           ></path>
         </svg>
       </div>
