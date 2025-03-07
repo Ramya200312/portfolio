@@ -9,21 +9,24 @@
   animation: fadeIn 1.5s forwards ease-in-out;
   animation-delay: 0.3s;
   height: 71vh;
+}
 
+@media (max-width: 768px) {
+  #head1 {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+    height: auto;
+  }
 }
 
 @keyframes fadeIn {
-  0% {
-      opacity: 0;
-  }
-  100% {
-      opacity: 1;
-  }
+  0% { opacity: 0; }
+  100% { opacity: 1; }
 }
 
 .content {
   color: white;
-  height:40vh;
   max-width: 50%;
   opacity: 0;
   transform: translateX(-50px);
@@ -31,25 +34,31 @@
   animation-delay: 0.5s;
 }
 
-@keyframes slideInLeft {
-  0% {
-      opacity: 0;
-      transform: translateX(-50px);
-  }
-  100% {
-      opacity: 1;
-      transform: translateX(0);
+@media (max-width: 768px) {
+  .content {
+    max-width: 90%;
+    transform: none;
   }
 }
 
+@keyframes slideInLeft {
+  0% { opacity: 0; transform: translateX(-50px); }
+  100% { opacity: 1; transform: translateX(0); }
+}
+
 .greeting {
-  
   font-size: 1.5rem;
   font-style: italic;
   margin-bottom: 10px;
   opacity: 0;
   animation: fadeIn 1.5s forwards ease-in-out;
   animation-delay: 0.7s;
+}
+
+@media (max-width: 768px) {
+  .greeting {
+    font-size: 1.2rem;
+  }
 }
 
 .headline {
@@ -63,6 +72,12 @@
   animation-delay: 0.9s;
 }
 
+@media (max-width: 768px) {
+  .headline {
+    font-size: 2rem;
+  }
+}
+
 .headline:hover {
   color: #3FFF00;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
@@ -74,9 +89,10 @@
   transition: all 0.3s ease;
 }
 
-.headline .highlight:hover {
-  color: #7A1CAC;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+@media (max-width: 768px) {
+  .highlight {
+    font-size: 2rem;
+  }
 }
 
 .profile-img {
@@ -87,15 +103,17 @@
   animation-delay: 1.2s;
 }
 
+@media (max-width: 768px) {
+  .profile-img {
+    width: 250px;
+    height: auto;
+    margin-top: 20px;
+  }
+}
+
 @keyframes slideInRight {
-  0% {
-      opacity: 0;
-      transform: translateX(50px) scale(0.95);
-  }
-  100% {
-      opacity: 1;
-      transform: translateX(0) scale(1);
-  }
+  0% { opacity: 0; transform: translateX(50px) scale(0.95); }
+  100% { opacity: 1; transform: translateX(0) scale(1); }
 }
 
 .profile-img:hover {
@@ -105,7 +123,7 @@
 .resume-btn {
   color: white;
   background-color: #3FFF00;
-  border-color:#7A1CAC;
+  border-color: #7A1CAC;
   margin-top: 20px;
   padding: 10px 20px;
   font-size: 1.2rem;
@@ -116,25 +134,26 @@
   animation-delay: 1.5s;
 }
 
+@media (max-width: 768px) {
+  .resume-btn {
+    font-size: 1rem;
+    padding: 8px 16px;
+  }
+}
+
 @keyframes fadeInUp {
-  0% {
-      opacity: 0;
-      transform: translateY(20px);
-  }
-  100% {
-      opacity: 1;
-      transform: translateY(0);
-  }
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
 }
 
 .resume-btn:hover {
   color: #fff;
   background-color: #7A1CAC;
-  border-color:#3FFF00;
+  border-color: #3FFF00;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
   transform: translateY(-3px);
 }
 
 #flip {
-transform: scaleY(90); /* Horizontal flip */
+  transform: scaleY(90); 
 }
